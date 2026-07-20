@@ -9,7 +9,7 @@ export const CONFIG = {
 
   // Used for the donate mailto fallback, the partner "reach out" link,
   // and the footer/social email icon.
-  CONTACT_EMAIL: 'donate@sunshinestategreens.org',
+  CONTACT_EMAIL: 'lucmuzie@gmail.com',
 
   // Confirm these handles are registered, then update if they change.
   TIKTOK_URL: 'https://www.tiktok.com/@sunshinestategreens',
