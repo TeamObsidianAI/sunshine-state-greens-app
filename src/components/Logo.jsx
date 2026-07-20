@@ -7,7 +7,7 @@ export default function Logo() {
   const [errored, setErrored] = useState(false);
 
   return (
-    <span className="flex items-center">
+    <span className="relative flex items-center">
       {!loaded && (
         <span className="flex items-center gap-2.5">
           <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
@@ -21,11 +21,13 @@ export default function Logo() {
           </span>
         </span>
       )}
+      {/* Rendered with opacity (never display:none) so the load event fires
+          reliably in Safari, which won't fire onLoad for display:none images. */}
       {!errored && (
         <img
           src="images/logo.jpg"
           alt="Sunshine State Greens — Sustainable Farming Systems"
-          className={loaded ? 'max-h-10 rounded-full' : 'hidden'}
+          className={loaded ? 'max-h-10 rounded-full' : 'absolute inset-0 opacity-0 pointer-events-none max-h-10'}
           onLoad={() => setLoaded(true)}
           onError={() => setErrored(true)}
         />
