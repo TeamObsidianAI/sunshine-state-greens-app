@@ -47,7 +47,7 @@ No environment variables are required for any of the above.
 | # | Placeholder | Status | Where | How to fix |
 |---|---|---|---|---|
 | 1 | **Logo** | ✅ Added (`logo.jpg`) | Header (`src/components/Logo.jsx`) | Real logo is in place. To swap it later, replace `public/images/logo.jpg` — the inline SVG badge only reappears if the file is missing or fails to load. |
-| 2 | **Founder photo** | ⬜ Still a placeholder | "Meet the Founder" (`src/components/FounderPhoto.jsx`) | Drop `founder.jpg` into `public/images/`. Same auto-fallback behavior as the logo. |
+| 2 | **Founder photo** | ✅ Added (`founder.jpg`) | "Meet the Founder" (`src/components/FounderPhoto.jsx`) | Real photo of Lucian is in place. Replace `public/images/founder.jpg` to swap it. |
 | 3 | **Hero photo** | ✅ Added (`hero-prototype.png`) | Hero section (`src/components/Hero.jsx`) | Real photo of the hydro unit is in place. Replace `public/images/hero-prototype.png` to swap it. |
 | 4 | **Donation link** | ⬜ Still a placeholder | "Sponsor a Box" (`src/config.js`) | Set `CONFIG.DONATION_URL` to the live PayPal Giving Fund / Square link. Until then, all donate buttons open a `mailto:` to `CONFIG.CONTACT_EMAIL` with the amount pre-filled in the message. |
 | 5 | **Confirmed social handles** | ⬜ Still a placeholder | "Follow the Mission" + footer (`src/config.js`) | Once `@sunshinestategreens` is confirmed/registered on TikTok and Instagram, update `CONFIG.TIKTOK_URL` / `CONFIG.INSTAGRAM_URL`. |
